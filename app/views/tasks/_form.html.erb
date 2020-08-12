@@ -1,0 +1,6 @@
+<%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <label><%= f.check_box :completed %> Mark as done</label><br>
+  <%= f.submit class:"btn-primary" %>
+<% end %>
